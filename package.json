@@ -1,7 +1,7 @@
 {
-  "name": "snarkjs",
+  "name": "@aeternity/snarkjs",
   "type": "module",
-  "version": "0.7.3",
+  "version": "0.1.0",
   "description": "zkSNARKs implementation in JavaScript",
   "main": "./build/main.cjs",
   "module": "./main.js",
@@ -32,7 +32,8 @@
     "buildcli": "rollup -c config/rollup.cli.config.js",
     "buildiife": "BROWSER=true rollup -c config/rollup.iife.config.js",
     "buildiifemin": "BROWSER=true rollup -c config/rollup.iife_min.config.js",
-    "buildesm": "BROWSER=true rollup -c config/rollup.browser.esm.config"
+    "buildesm": "BROWSER=true rollup -c config/rollup.browser.esm.config",
+    "prepublishOnly": "npm run build"
   },
   "bin": {
     "snarkjs": "build/cli.cjs"
@@ -53,7 +54,7 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iden3/snarkjs.git"
+    "url": "https://github.com/aeternity/snarkjs.git"
   },
   "dependencies": {
     "@iden3/binfileutils": "0.0.11",
